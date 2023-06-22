@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <img src="./img/plant.png" alt="" height="350px" />
+
+        <img src="./img/sun.png" alt="" height="125px" class="sun" />
+
+        <img src="./img/moon.png" alt="" height="125px" class="moon" />
+
+        <div class="photosynthesis">Fotosinteza</div>
+        <div class="breathing">Disanje</div>
+
+        <div class="el_1_4_container">
+          <div class="element_left_1"></div>
+          <div class="element_left_2"></div>
+          <div class="element_left_3"></div>
+          <div class="element_left_4"></div>
+          <span class="arrow_l_1" data-value="arrow">
+            <img src="./img/arrow_upward.svg" alt="" height="25px" />
+          </span>
+          <span class="arrow_l_2" data-value="arrow">
+            <img src="./img/arrow_back.svg" alt="" height="25px" />
+          </span>
+          <span class="arrow_l_3" data-value="arrow">
+            <img src="./img/arrow_upward.svg" alt="" height="25px" />
+          </span>
+          <span class="arrow_l_4" data-value="arrow">
+            <img src="./img/arrow_forward.svg" alt="" height="25px" />
+          </span>
+          <div class="element_right_1"></div>
+          <div class="element_right_2"></div>
+          <div class="element_right_3"></div>
+          <div class="element_right_4"></div>
+          <div class="arrow_right_right"></div>
+          <span class="arrow_r_1" data-value="arrow">
+            <img src="./img/arrow_downward.svg" alt="" height="25px" />
+          </span>
+          <span class="arrow_r_2" data-value="arrow">
+            <img src="./img/arrow_back.svg" alt="" height="25px" />
+          </span>
+          <span class="arrow_r_3" data-value="arrow">
+            <img src="./img/arrow_downward.svg" alt="" height="25px" />
+          </span>
+          <span class="arrow_r_4" data-value="arrow">
+            <img src="./img/arrow_forward.svg" alt="" height="25px" />
+          </span>
+        </div>
+
+        <div class="el_5_container">
+          <div class="co_2">
+            <p>CO <sub>2</sub></p>
+            <p>ugljikov dioksid</p>
+          </div>
+          <div class="element_left_5"></div>
+          <span class="arrow_l_5" data-value="arrow">
+            <img src="./img/arrow_forward.svg" alt="" height="25px" />
+          </span>
+          <div class="arrow_right_right"></div>
+          <div class="arrow_left_right"></div>
+          <div class="element_right_5"></div>
+          <span class="arrow_r_5" data-value="arrow">
+            <img src="./img/arrow_forward.svg" alt="" height="25px" />
+          </span>
+          <div class="arrow_left_right"></div>
+          <div class="o_2">
+            <p>O <sub>2</sub></p>
+            <p>kisik</p>
+          </div>
+        </div>
+
+        <!--Element koji se prikazuje kada je noć-->
+        <div class="el_night_container hidden">
+          <div class="co2_night">
+            <p>CO <sub>2</sub></p>
+            <p>ugljikov dioksid</p>
+          </div>
+          <div class="element_down_left"></div>
+          <div class="arrow_down_left"></div>
+          <span class="arrow_d_l_1" data-value="arrow">
+            <img src="./img/arrow_back.svg" alt="" height="25px" />
+          </span>
+          <div class="element_down_right"></div>
+          <div class="arrow_down_right"></div>
+          <span class="arrow_d_r_1" data-value="arrow">
+            <img src="./img/arrow_back.svg" alt="" height="25px" />
+          </span>
+          <div class="o_2_night">
+            <p>O <sub>2</sub></p>
+            <p>kisik</p>
+          </div>
+        </div>
+      </main>
+      <div class="slidebar_container">
+        <input
+          type="range"
+          min="0"
+          max="25"
+          value="0"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+      <div class="day timeDay">Dan</div>
+      <div class="night timeDay">Noć</div>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

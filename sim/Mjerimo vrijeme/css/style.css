@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f5c6;
+}
+
+.game__container {
+  max-width: 768px;
+  height: auto;
+  border: 15px solid #7ed957;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+/*CSS naslova*/
+header {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/*CSS za main dio stranice*/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.left__side__main,
+.right__side__main {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/*CSS za sat*/
+.clock__content {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-image: url(../img/clock_img_320px.png);
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.clock__content::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 3;
+}
+
+.hand {
+  background-color: black;
+  position: absolute;
+  top: 12%;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+
+.hand.hour {
+  width: 7px;
+  height: 75px;
+  background-color: #ff5757;
+  top: 26.5%;
+  z-index: 2;
+}
+
+.hand.minute {
+  width: 7px;
+  height: 121px;
+  background-color: #087dc6;
+}
+
+.btn__content {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #7ed957;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+  cursor: pointer;
+}
+
+/*CSS za desnu stranu*/
+.am__pm__img__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.am__img__content,
+.pm__img__content {
+  width: 45%;
+}
+
+.am__pm__content {
+  margin: 1rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  border: 7px solid #7ed957;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.input__user {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+input {
+  width: 80px;
+  height: 80px;
+  outline: none;
+  text-align: center;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+input#inputHour {
+  border: 3px solid #ff5757;
+  color: #ff5757;
+}
+
+input#inputMinute {
+  border: 3px solid #087dc6;
+  color: #087dc6;
+}
+
+.btn__check__answer__content {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin: 1rem;
+}
+
+.message__content {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.wrong__answer {
+  border: 7px solid #ffb300;
+}
+
+.right__answer {
+  border: 7px solid #0bad1b;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.help__element {
+  background-color: #7ed957;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.help__message {
+  font-size: 1.5rem;
+}
+
+.footer__logo__img {
+  margin-top: 0.5rem;
+}
+
+/*Generički CSS (za JS)*/
+.hidden {
+  display: none;
+}
+
+.opacity__img {
+  opacity: 0;
+}
+
+/*Animacije*/
+
+.animation__hand__hour {
+  -webkit-animation: animation__hour 2s linear forwards;
+  animation: animation__hour 2s linear forwards;
+}
+
+.animation__hand__minute {
+  -webkit-animation: animation__minute 2s linear forwards;
+  animation: animation__minute 2s linear forwards;
+}
+
+.animation_img_opacity {
+  -webkit-animation: animation__img 2s linear forwards;
+  animation: animation__img 2s linear forwards;
+}
+
+.animation_message_opacity {
+  -webkit-animation: animation_message_opacity 3s linear forwards;
+  animation: animation_message_opacity 3s linear forwards;
+}
+
+@-webkit-keyframes animation__hour {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+  }
+}
+@keyframes animation__hour {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+  }
+}
+
+@-webkit-keyframes animation__minute {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-540deg);
+    transform: rotate(-540deg);
+  }
+}
+@keyframes animation__minute {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-540deg);
+    transform: rotate(-540deg);
+  }
+}
+
+@-webkit-keyframes animation__img {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animation__img {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes animation_message_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animation_message_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

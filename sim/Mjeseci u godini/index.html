@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="main-title">
+        <h2>Mjeseci u godini</h2>
+      </div>
+      <div class="help-content">
+        <div class="help-element">
+          <p>UPUTE</p>
+        </div>
+      </div>
+      <main>
+        <div class="calendar-content">
+          <img src="./img/calendar_w375px.png" alt="" />
+          <img class="nlo" src="./img/nlo_w50px.png" alt="" />
+        </div>
+        <div class="answer-options-container">
+          <div class="answer-container">
+            <div class="answer"></div>
+          </div>
+          <div class="answer-container">
+            <div class="answer"></div>
+          </div>
+          <div class="answer-container">
+            <div class="answer"></div>
+          </div>
+        </div>
+      </main>
+      <div class="btn-message-container">
+        <div class="btn-content">
+          <button id="newGame">POKRENI IGRU</button>
+          <button id="checkAnswer" disabled="true">PROVJERI ODGOVOR</button>
+        </div>
+        <div class="message-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window hidden">
+      <div class="close-btn">
+        <img id="closeBtnModal" src="./img/close.svg" alt="" />
+      </div>
+      <div class="main-content">
+        <div class="modal-content">
+          <img src="./img/modal-img.png" alt="" />
+          <img class="nlo-modal" src="./img/modal-nlo.png" alt="" />
+        </div>
+        <div class="modal-text">
+          <p class="modal-text-p">Uđi u svoj vremenski stroj.</p>
+          <p class="modal-text-p">
+            Kroz vrijeme plovi i mjesece u godini ponovi.
+          </p>
+          <p class="modal-text-p">
+            Pomoć ti može biti poseban dan koji je za svaki mjesec zadan.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

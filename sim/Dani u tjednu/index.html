@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Dani u tjednu</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <div class="btn-container">
+          <button id="newGame">POKRENI IGRU</button>
+        </div>
+        <div class="main-title">Dani u tjednu</div>
+        <div class="btn-container">
+          <button id="help">UPUTE</button>
+        </div>
+      </header>
+      <main>
+        <div class="days-container">
+          <div data-day="monday" class="day-content">
+            <div data-day="ponedjeljak" id="monday" class="day monday">
+              <p class="noselect">Ponedjeljak</p>
+            </div>
+          </div>
+          <div data-day="tuesday" class="day-content">
+            <div data-day="utorak" id="tuesday" class="day tuesday">
+              <p class="noselect">Utorak</p>
+            </div>
+          </div>
+          <div data-day="wednesday" class="day-content">
+            <div data-day="srijeda" id="wednesday" class="day wednesday">
+              <p class="noselect">Srijeda</p>
+            </div>
+          </div>
+          <div data-day="thursday" class="day-content">
+            <div data-day="četvrtak" id="thursday" class="day thursday">
+              <p class="noselect">Četvrtak</p>
+            </div>
+          </div>
+          <div data-day="friday" class="day-content">
+            <div data-day="petak" id="friday" class="day friday">
+              <p class="noselect">Petak</p>
+            </div>
+          </div>
+          <div data-day="saturday" class="day-content">
+            <div data-day="subota" id="saturday" class="day saturday">
+              <p class="noselect">Subota</p>
+            </div>
+          </div>
+          <div data-day="sunday" class="day-content">
+            <div data-day="nedjelja" id="sunday" class="day sunday">
+              <p class="noselect">Nedjelja</p>
+            </div>
+          </div>
+        </div>
+        <div class="task-container">
+          <div class="answer-box">
+            <div class="title">
+              <h2 class="noselect">JUČER</h2>
+            </div>
+            <div class="answer-content">
+              <div id="yesterday" class="element"></div>
+            </div>
+            <div class="img-content">
+              <img class="img-correct" alt="" />
+            </div>
+          </div>
+          <div class="answer-box">
+            <div class="title">
+              <h2 class="noselect">DANAS</h2>
+            </div>
+            <div class="answer-content">
+              <div id="today" class="element"></div>
+            </div>
+            <div class="img-content">
+              <img class="img-correct" alt="" />
+            </div>
+          </div>
+          <div class="answer-box">
+            <div class="title">
+              <h2 class="noselect">SUTRA</h2>
+            </div>
+            <div class="answer-content">
+              <div id="tomorrow" class="element"></div>
+            </div>
+            <div class="img-content">
+              <img class="img-correct" alt="" />
+            </div>
+          </div>
+          <div class="help-message">
+            <p></p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="modal" class="modal-window hidden">
+      <div id="btnClose">
+        <img src="./img/close.svg" alt="" width="40px" />
+      </div>
+      <div class="help-content">
+        <p>Tjedan sedam dana ima,</p>
+        <p>a ti poigraj se njima.</p>
+        <p>Jučer, danas, sutra odredi</p>
+        <p>i dane na pravo mjesto dovedi.</p>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

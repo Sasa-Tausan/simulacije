@@ -1,0 +1,65 @@
+LOGIKA IGRE
+Početni ekran: nema predmeta dok se ne klikne 
+Inicijalno je igra na Početno.
+U Poruka piše: Klikni na Pokreni. - Pokreni
+Pojavi se prvi predmet i Poruka gdje ga stavlja.
+Ako je dobro stavljen Poruka da može dalje i gumb Novi predmet se aktivira za novi predmet.
+Ako nije dobro stavio Poruka da pokuša ponovno i može kliknuti Pomoć. 
+Kad klikne pomoć pokažu se polja s nazivima strana na 3 sekunde.
+Nazivi su na poljima unutar elementa.
+
+Kad sve složi kako treba ide Poruka na sredini vizuala s ovacijama.
+
+TEKSTOVI
+Polje Uputa
+Uredi svoju sobu s osam različitih predmeta. Promotri gdje se nalazi sjever. Pokreni igru i postavi premet na određenu stranu svijeta. Ako nisi dobro postavio/postavila predmet, može ti pomoći gumb Pomoć.
+Želiš li još bolje usvojiti strane svijeta odaberi razinu Napredno.
+
+Polje Poruka
+1) Klikni na Pokreni.
+2) Dobro si postavio/postavila predmet. Klikni na Novi predmet i nastavi uređivati svoju sobu.
+3) Pokušaj ponovno! Klikni na gumb Pomoć.
+
+Poruka kad dobro složi sve
+Tvoja soba sada je spremna za useljenje. Možeš ponovno pokrenuti igru ili pokušati urediti sobu na naprednoj razini.
+
+
+boja okvira prilikom ulaska je narančasta 
+kao i biranje razine
+
+kada točno stavi boja okvira je green
+kada krivo stavi boja okvira je red
+
+
+Kada se stranica učita
+1. pojavi se poruka Klikni na pokreni.
+2. označena je početna razina
+3. gumbi novi predmet i pomoć su disable
+
+
+Kada učenik klikne na pokreni
+U pozadini se dešava sljedeće
+1. itemsArray se promiješa
+2. postavi se prva slika iz itemsArraya po redu
+3. item postane draggable
+4. strane svijeta postanu dropzone
+5. Pojavi se zadatak na koju stranu svijeta treba
+   smjestiti stvar
+
+
+Draggalbe funkcionalnosti
+1. prilikom ulaska u dropzone pojavi se okvir
+   narančaste boje kako bi korisnik znao gdje 
+   može spustiti sliku
+2. kada se spusti predmet na pravu stranu svijeta
+   tada se zazeleni okvir, disebla se draggable i
+   enabla se gumb Novi predmet
+3. ako spusti na krivu stranu tada okvir postaje
+   crveni i enabla se gumb pomoć
+
+Gumb novi predmet
+1. prikazuje se novi predmet
+
+Gumb pomoć
+1. kada se klikne na gumb pomoć tada se
+   na tri sekunde pojave natpisi strana svijeta

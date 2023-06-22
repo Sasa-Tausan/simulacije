@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Simulacija godova</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="main-title-content">
+        <h1>Vremenski uvjeti</h1>
+      </div>
+      <header>
+        <div class="help-container">
+          <div class="help-headline">
+            <p>UPUTE</p>
+          </div>
+          <div class="help-message">
+            <p id="helpMessage">
+              Odaberi jedan vremenski uvjet za vlažnost. Promatraj širinu
+              godova.
+            </p>
+          </div>
+        </div>
+        <div class="option-container">
+          <p class="active-option" id="beginner">POČETNO</p>
+          <p id="advanced" data-active="false">NAPREDNO</p>
+        </div>
+      </header>
+      <div class="option-img-container">
+        <div class="option-img-container-content">
+          <div class="option-img-title">
+            <h2>VLAŽNOST</h2>
+          </div>
+          <div class="img-content">
+            <img
+              id="moisture"
+              class="weather-img"
+              src="./img/weather_0_default.png"
+              alt=""
+            />
+            <p>Vlažno</p>
+          </div>
+          <div class="img-content">
+            <img
+              id="normalWeather"
+              class="weather-img"
+              src="./img/weather_1_default.png"
+              alt=""
+            />
+            <p>Umjereno</p>
+          </div>
+          <div class="img-content">
+            <img
+              id="drought"
+              class="weather-img"
+              src="./img/weather_2_default.png"
+              alt=""
+            />
+            <p>Suho</p>
+          </div>
+        </div>
+        <div class="option-img-container-content hidden" id="tempContent">
+          <div class="option-img-title">
+            <h2>TEMPERATURA</h2>
+          </div>
+          <div class="img-content">
+            <img
+              id="cold"
+              class="temp-img"
+              src="./img/temp_0_default.png"
+              alt=""
+            />
+            <p>Hladno</p>
+          </div>
+          <div class="img-content">
+            <img
+              id="normalTemp"
+              class="temp-img"
+              src="./img/temp_1_default.png"
+              alt=""
+            />
+            <p>Umjereno</p>
+          </div>
+          <div class="img-content">
+            <img
+              id="hot"
+              class="temp-img"
+              src="./img/temp_2_default.png"
+              alt=""
+            />
+            <p>Toplo</p>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="tree-img-container">
+          <img src="./img/tree-rings.png" alt="" />
+          <div class="tree-ring"></div>
+        </div>
+        <div class="reset-plus-minus-container">
+          <div class="plus-minus-content">
+            <div class="god-content">
+              <img src="./img/plus_god_w90px.png" alt="" />
+              <button id="plusGod" disabled="true">Novi god</button>
+            </div>
+            <div class="god-content">
+              <img src="./img/minus_god_w90px.png" alt="" />
+              <button id="minusGod" disabled="true">Makni god</button>
+            </div>
+          </div>
+          <div class="reset-content">
+            <a href="index.html"><img src="./img/reset_w90px.png" alt="" /></a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

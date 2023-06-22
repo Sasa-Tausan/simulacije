@@ -1,0 +1,252 @@
+/*Varijable*/
+:root {
+  --bgColor: #f6f5c5;
+  --primaryColor: #7ed956;
+  --secondaryColor: #ed6d1c;
+  --borderRadius: 20px;
+  --mainPadding: 10px;
+  --titleFontSize: 1.4rem;
+  --mainFontSize: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgColor);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-center {
+  justify-self: center;
+  align-self: center;
+}
+
+.flex-space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  border: 10px solid var(--primaryColor);
+  border-radius: var(--borderRadius);
+  display: grid;
+  grid-template-columns: repeat(16, 48px);
+  grid-template-rows: repeat(13, 48px);
+  row-gap: 10px;
+  padding: var(--mainPadding);
+  position: relative;
+  overflow: hidden;
+}
+
+.manual-content {
+  position: absolute;
+  width: 500px;
+  top: -160%;
+  left: 15%;
+  background-color: rgba(128, 128, 128, 0.948);
+  border: 5px solid var(--secondaryColor);
+  border-radius: var(--borderRadius);
+  padding: var(--mainPadding);
+  font-size: var(--titleFontSize);
+  z-index: 20;
+  line-height: 2rem;
+  color: white;
+}
+
+.blur {
+  filter: blur(8px);
+}
+
+header {
+  grid-column: 1 / 16;
+  font-size: 2rem;
+}
+
+.after-header {
+  grid-column: 1 / 16;
+  grid-row: 2 / 4;
+}
+
+.btn {
+  background-color: var(--primaryColor);
+  padding: var(--mainPadding);
+  font-size: var(--mainFontSize);
+  font-weight: 900;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+}
+
+.message-content {
+  border: 5px solid var(--secondaryColor);
+  border-radius: var(--borderRadius);
+  padding: var(--mainPadding);
+  font-size: var(--mainFontSize);
+  width: 80%;
+}
+
+.level-content {
+  grid-column: 2 / 8;
+  grid-row: 4 / 5;
+  font-size: var(--mainFontSize);
+  cursor: pointer;
+}
+
+.active-level {
+  background-color: var(--secondaryColor);
+  border-radius: var(--borderRadius);
+  font-weight: bold;
+  padding: var(--mainPadding);
+}
+
+.task-message {
+  grid-column: 9 / 16;
+  grid-row: 4 / 5;
+  border: 5px solid var(--secondaryColor);
+  border-radius: var(--borderRadius);
+  padding: var(--mainPadding);
+}
+
+#newGame {
+  grid-row: 5 / 6;
+}
+
+main {
+  position: relative;
+  grid-column: 1 / 13;
+  grid-row: 5 / 14;
+  /*prettier-ignore*/
+  background-image: url('../img/room.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+
+div:nth-child(1) {
+  grid-column: 3 / 6;
+  grid-row: 2 / 6;
+}
+
+div:nth-child(2) {
+  grid-column: 7 /10;
+  grid-row: 2 / 6;
+}
+
+div:nth-child(3) {
+  grid-column: 11 /14;
+  grid-row: 2 / 6;
+}
+
+div:nth-child(4) {
+  grid-column: 11 / 14;
+  grid-row: 7 / 10;
+}
+
+div:nth-child(5) {
+  grid-column: 11 /14;
+  grid-row: 11 / 15;
+}
+
+div:nth-child(6) {
+  grid-column: 7 /10;
+  grid-row: 11 / 15;
+}
+
+div:nth-child(7) {
+  grid-column: 3 / 6;
+  grid-row: 11 / 15;
+}
+
+div:nth-child(8) {
+  grid-column: 3 /6;
+  grid-row: 7 / 10;
+}
+
+#img-content {
+  grid-column: 7 / 10;
+  grid-row: 7 / 10;
+}
+
+.dropzone-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.dropzone-content {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.item-img {
+  width: 75%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.arrow-content {
+  position: absolute;
+  text-align: center;
+  color: var(--secondaryColor);
+  top: -2%;
+  left: 47%;
+}
+
+.world-side {
+  font-size: 2.5rem;
+  border-radius: var(--borderRadius);
+  border: 2px solid #0039e6;
+}
+
+.btn_1 {
+  margin-left: 0.8rem;
+  grid-column: 13 / 16;
+}
+
+#newItem {
+  grid-row: 7/ 8;
+}
+
+#helpBtn {
+  grid-row: 12 / 14;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.help-message-animation {
+  animation: help-message-an 0.5s linear forwards;
+}
+
+@keyframes help-message-an {
+  from {
+    top: -130%;
+  }
+
+  to {
+    top: -30%;
+  }
+}

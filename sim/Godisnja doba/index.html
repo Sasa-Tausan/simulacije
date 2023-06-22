@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Godišnja doba</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <button id="newGame" disabled="true">POKRENI IGRU</button>
+        <h2 class="main-title">Godišnja doba</h2>
+      </header>
+      <div class="choose-level-container">
+        <div class="choose-level-content">
+          <div id="beginner" class="check-box"></div>
+          <p>POČETNO</p>
+        </div>
+        <div class="choose-level-content">
+          <div id="advanced" class="check-box"></div>
+          <p>NAPREDNO</p>
+        </div>
+      </div>
+      <main>
+        <div data-level="beginner" class="user-container hidden">
+          <h3>
+            DIJELOVI <br />
+            STABLA
+          </h3>
+          <div class="circle">
+            <img data-id="tp" alt="" />
+          </div>
+          <div class="circle">
+            <img data-id="tp" alt="" />
+          </div>
+          <div class="circle">
+            <img data-id="tp" alt="" />
+          </div>
+          <div class="circle">
+            <img data-id="tp" alt="" />
+          </div>
+        </div>
+        <div data-level="advanced" class="user-container hidden">
+          <h3>
+            VREMENSKI <br />
+            UVJETI
+          </h3>
+          <div class="circle">
+            <img data-id="wc" alt="" />
+          </div>
+          <div class="circle">
+            <img data-id="wc" alt="" />
+          </div>
+          <div class="circle">
+            <img data-id="wc" alt="" />
+          </div>
+          <div class="circle">
+            <img data-id="wc" alt="" />
+          </div>
+        </div>
+        <div class="tree-img-task-container">
+          <div class="tree-img">
+            <img id="treeTask" alt="" />
+          </div>
+          <div class="task-element">
+            <img id="task" alt="" />
+          </div>
+          <div class="message-element">
+            <p id="message">Odaberi razinu početno ili napredno.</p>
+          </div>
+        </div>
+        <div data-level="beginner" class="user-container hidden">
+          <h3>NOĆ/DAN</h3>
+          <div class="square">
+            <img data-id="dn" alt="" />
+          </div>
+          <div class="square">
+            <img data-id="dn" alt="" />
+          </div>
+          <div class="square">
+            <img data-id="dn" alt="" />
+          </div>
+          <div class="square">
+            <img data-id="dn" alt="" />
+          </div>
+        </div>
+        <div data-level="advanced" class="user-container hidden">
+          <h3>
+            POČINJE/ <br />
+            ZAVRŠAVA
+          </h3>
+          <div class="square">
+            <img data-id="ds" alt="" />
+          </div>
+          <div class="square">
+            <img data-id="ds" alt="" />
+          </div>
+          <div class="square">
+            <img data-id="ds" alt="" />
+          </div>
+          <div class="square">
+            <img data-id="ds" alt="" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Izumi stoljeća</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="helpMessage">
+        <p>
+          Pokreni svoj vremenski stroj, putuj kroz stoljeća i otkrivaj izume.
+        </p>
+        <p>
+          Kada ti se prikaže izum, upiši stoljeće kojemu pripada godina njegova
+          otkrića.
+        </p>
+      </div>
+      <header>
+        <div id="helpBtn">UPUTE</div>
+        <div class="main-title">
+          <h2>Izumi stoljeća</h2>
+        </div>
+      </header>
+      <main>
+        <div class="main-content hidden">
+          <img src="#" alt="" id="clueImg" />
+
+          <p id="clueMessage"></p>
+        </div>
+        <div class="time-machine-btn-content">
+          <div class="time-machine-img">
+            <img src="./img/time_machine.png" alt="" id="timeMachine" />
+            <img src="./img/rotate.png" alt="" class="rotate-img" />
+            <img src="./img/smoke.png" alt="" class="smoke-1 hidden" />
+            <img src="./img/smoke.png" alt="" class="smoke-2 hidden" />
+            <img src="./img/smoke.png" alt="" class="smoke-3 hidden" />
+            <img src="./img/smoke.png" alt="" class="smoke-4 hidden" />
+            <img src="./img/redlight.png" alt="" class="redlight" />
+            <img src="./img/redlight_active.png" alt="" class="redlight" />
+            <img src="./img/light.gif" alt="" id="tv" class="hidden" />
+          </div>
+          <button id="newGame">POKRENI</button>
+        </div>
+
+        <div class="input-content hidden">
+          <div class="input-user-content">
+            <input type="text" name="inputUser" id="inputUser" />
+            <span>. stoljeće</span>
+          </div>
+          <div class="mesage-content">
+            <p>U lijevi kvadrat upiši stoljeće.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

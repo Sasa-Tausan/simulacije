@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Mjerimo temperaturu</title>
+  </head>
+  <body>
+    <div class="game__container">
+      <header>
+        <h2>Mjerimo temperaturu</h2>
+      </header>
+      <main>
+        <div class="thermometer__content">
+          <img src="./img/termometar.png" alt="" />
+          <div class="circle">
+            <div class="hand" id="hand"></div>
+          </div>
+        </div>
+        <div class="right__container">
+          <div class="img__container">
+            <div class="img__content">
+              <img id="imgTemp" alt="" width="375px" />
+              <h2 id="imgTempTitle"></h2>
+            </div>
+          </div>
+          <div class="game__features__container">
+            <div class="game__features__content">
+              <div class="game__features__title">
+                <p>UPIŠI</p>
+                <p>TEMPERATURU</p>
+              </div>
+              <div class="game__features__input">
+                <input
+                  type="text"
+                  name="inputTemp"
+                  id="inputTemp"
+                  placeholder="0"
+                  disabled="true"
+                  ;
+                />
+                <span>°C</span>
+              </div>
+              <div class="game__features__btn">
+                <button class="btn" id="checkAnswerBtn" disabled="true">
+                  PROVJERI ODGOVOR
+                </button>
+              </div>
+            </div>
+            <div class="game__play__btn__message__container">
+              <div class="game__play__btn">
+                <button class="btn" id="playBtn">POKRENI IGRU</button>
+              </div>
+              <div class="message__display">
+                <p id="message"></p>
+              </div>
+            </div>
+            <footer>
+              <div class="help__element">
+                <p>UPUTE</p>
+              </div>
+              <div class="help__message">
+                <p>
+                  Pokreni igru. Pogledaj termometar i očitaj temperaturu. Upiši
+                  vrijednost temperature. Provjeri odgovor.
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="logo">
+      <img
+        src="./img/logo_sk_w150px.png"
+        alt="Logo školske knjige"
+        class="logo"
+      />
+    </div>
+  </body>
+</html>

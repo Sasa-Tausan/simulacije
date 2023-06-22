@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f5c5;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  border: 10px solid #7ed956;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 1rem;
+}
+
+#helpMessage {
+  position: absolute;
+  z-index: 10;
+  width: 60%;
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: rgba(128, 128, 128, 0.944);
+  border: 10px solid #ff914c;
+  border-radius: 10px;
+  font-weight: 700;
+  top: -100%;
+  color: white;
+}
+
+#helpMessage p {
+  margin-bottom: 1rem;
+}
+
+.help-message-animation {
+  animation: help-message-an 0.7s linear forwards;
+}
+
+@keyframes help-message-an {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+    left: 30%;
+  }
+}
+
+#helpBtn {
+  background-color: #7ed956;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+}
+
+.main-title {
+  font-size: 2.5rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+#clueImg {
+  border: 10px solid #ff914c;
+  border-radius: 10px;
+  padding: 10px;
+  height: 135px;
+}
+
+#clueMessage {
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+
+.time-machine-btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.time-machine-img {
+  position: relative;
+}
+
+#timeMachine {
+  height: 350px;
+}
+
+.rotate-img {
+  border-radius: 50%;
+  position: absolute;
+  top: 21%;
+  left: 57.3%;
+  width: 68px;
+}
+
+#newGame {
+  background-color: #7fd953;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.705);
+}
+
+.input-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+.input-user-content {
+  width: 35%;
+  margin-left: 3rem;
+}
+
+span {
+  font-size: 1.4rem;
+}
+
+#inputUser {
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  border: 5px solid #ff904a;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2.2rem;
+  outline: none;
+}
+
+.mesage-content {
+  padding: 20px;
+  font-size: 1.3rem;
+  border: 5px solid #ff904a;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.logo {
+  margin-top: 0.5rem;
+}
+
+/*Rotiranje ventilatora animacija i klasa*/
+
+.rotate-img-an {
+  animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Smoke animation*/
+.smoke-1 {
+  position: absolute;
+  top: 12%;
+  left: 89%;
+
+  height: 30px;
+}
+
+.smoke-1-an {
+  animation: smoke-an 1.2s linear infinite;
+}
+
+.smoke-2 {
+  position: absolute;
+  top: 5%;
+  left: 96%;
+
+  height: 25px;
+}
+
+.smoke-2-an {
+  animation: smoke-an 0.9s 0.3s linear infinite;
+}
+
+.smoke-3 {
+  position: absolute;
+  top: -3%;
+  left: 100%;
+
+  height: 20px;
+}
+
+.smoke-3-an {
+  animation: smoke-an 0.9s 0.6s linear infinite;
+}
+
+.smoke-4 {
+  position: absolute;
+  top: -10%;
+  left: 105%;
+
+  height: 20px;
+}
+
+.smoke-4-an {
+  animation: smoke-an 0.9s 0.9s linear infinite;
+}
+
+@keyframes smoke-an {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.redlight {
+  position: absolute;
+  top: 11.3%;
+  left: 61.5%;
+  height: 40px;
+}
+
+.redlight-an {
+  animation: redlight-an 1s linear infinite;
+}
+
+.redlight-an-active {
+  animation: redlight-an-active 1s linear infinite;
+}
+
+@keyframes redlight-an {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes redlight-an-active {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* TV oblik*/
+#tv {
+  position: absolute;
+  width: 95px;
+  height: 75px;
+  margin: 20px 0;
+  background: red;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: 0.1em;
+  top: 14%;
+  left: 13%;
+}
+#tv:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+/*animacija slike i poruke o izumu*/
+
+.main-content-animation {
+  animation: main-content-an 1s linear forwards;
+}
+
+@keyframes main-content-an {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}

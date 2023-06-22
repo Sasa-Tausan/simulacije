@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>KOLIKO JE SATI?</title>
+  </head>
+  <body>
+    <div class="game__container">
+      <header>
+        <h2>Koliko je sati?</h2>
+      </header>
+      <main>
+        <div class="left__side__main">
+          <div class="clock__content">
+            <div class="hand hour" id="handHour"></div>
+            <div class="hand minute" id="handMinute"></div>
+          </div>
+          <div class="btn__content">
+            <button id="btn__play__clock" class="btn">POKRENI SAT/URU</button>
+          </div>
+        </div>
+        <div class="right__side__main">
+          <div class="am__pm__img__content">
+            <div class="am__img__content">
+              <img
+                src="./img/am_img_125px.png"
+                alt="Slika prikazuje vrijeme prije podne"
+              />
+            </div>
+            <div class="pm__img__content">
+              <img
+                src="./img/pm_img_125px.png"
+                alt="Slika prikazuje vrijeme poslije podne"
+              />
+            </div>
+          </div>
+          <div class="am__pm__content">
+            <p id="message__ampm">PRIJEPODNE / POSLIJEPODNE</p>
+          </div>
+          <div class="input__user">
+            <input
+              type="text"
+              id="inputHour"
+              name="inputHour"
+              placeholder="sat"
+            />
+            <input
+              type="text"
+              id="inputMinute"
+              name="inputMinute"
+              placeholder="min"
+            />
+          </div>
+          <div class="btn__check__answer__content">
+            <button id="btn__check__answer" class="btn" disabled="true">
+              PROVJERI ODGOVOR
+            </button>
+          </div>
+          <div class="message__content">
+            <p id="message__error"></p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="help__element">
+          <p>UPUTE</p>
+        </div>
+        <div class="help__message">
+          <p>
+            Pokreni sat/uru. Kada se kazaljke zaustave upiši sate i minute.
+            Provjeri odgovor.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="footer__logo">
+      <img
+        class="footer__logo__img"
+        src="./img/logo_sk_w150px.png"
+        alt="Logo školske knjige"
+      />
+    </div>
+  </body>
+</html>

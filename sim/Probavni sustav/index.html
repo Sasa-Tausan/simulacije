@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Probavni sustav</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="help_message" id="helpMessage"><h2>UPUTE</h2></div>
+      <div class="help_message_text" id="helpMessageText">
+        <p>
+          Pokušaj redom složiti organe probavng sustava, a probavne žlijezde
+          dodaj na kraju. Za svaki organ pročitaj zanimljivosti.
+        </p>
+      </div>
+      <div class="final_message_container" id="finalMessage">
+        <div class="final_message_text">
+          <p>
+            Pokreni ponovno igru i doznaj nove zanimljivosti o organima
+            probavnog sustava.
+          </p>
+        </div>
+        <button class="final_message_btn" id="newGame">POKRENI</button>
+      </div>
+      <div class="left_side">
+        <div class="title">
+          <h2>ORGANI</h2>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>Hrana za 7 sekundi prolazi kroz jednjak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>Hrana za 7 sekundi prolazi kroz jednjak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>Hrana za 7 sekundi prolazi kroz jednjak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>Hrana za 7 sekundi prolazi kroz jednjak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>Hrana za 7 sekundi prolazi kroz jednjak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>Hrana za 7 sekundi prolazi kroz jednjak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="organ_content">
+          <div class="organ_img">
+            <img src="#" alt="" class="dragable-item" />
+          </div>
+          <div class="organ_title">
+            <p></p>
+          </div>
+          <div class="fun_fact hidden">
+            <div class="fun_fact_img">
+              <img src="./img/lightbulb.png" alt="" height="30px" />
+            </div>
+            <div class="fun_fact_text">
+              <p>
+                Na mjestu prelaska tankog u debelo crijevo nalazi se slijepo
+                crijevo s crvuljkom.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <div class="human_body_img">
+          <img src="./img/body.png" class="responsive" alt="" />
+          <div class="esophagus organ_dropzone" data-organ="esophagus"></div>
+          <div class="stomach organ_dropzone" data-organ="stomach"></div>
+          <div class="duodenum organ_dropzone" data-organ="duodenum"></div>
+          <div class="liver organ_dropzone" data-organ="liver"></div>
+          <div class="pancreas organ_dropzone" data-organ="pancreas"></div>
+          <div class="colon organ_dropzone" data-organ="colon"></div>
+          <div
+            class="small_intestine organ_dropzone"
+            data-organ="small_intestine"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./img/logo_sk_w150px.png" alt="" />
+    </div>
+  </body>
+</html>

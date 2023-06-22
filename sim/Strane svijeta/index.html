@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Saša Taušan" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Strane svijeta</title>
+  </head>
+  <body class="flex-center">
+
+    <div class="container">
+      <div class="manual-content">
+        <p>
+          Uredi svoju sobu s osam različitih predmeta. Promotri gdje se nalazi
+          sjever. 
+          <p>  Pokreni igru i postavi predmet na zadanu stranu svijeta.</p> Ako
+          nisi dobro postavio/postavila predmet, klikni na gumb Pomoć.
+        </p>
+    
+      </div>
+      <header class="grid-item-center">
+        <h2>Strane svijeta</h2>
+      </header>
+      <section class="after-header flex-space-evenly">
+        <button id="manualBtn" class="btn">UPUTE</button>
+        <div class="message-content">
+          <p></p>
+        </div>
+      </section>
+      <button id="newGame" class="btn btn_1">NOVA IGRA</button>
+      <section class="level-content flex-space-evenly">
+        <button id="beginner" class="btn">POČETNO</button>
+        <button id="advanced" class="btn">NAPREDNO</button>
+      </section>
+      <section class="task-message">
+        <p id="taskMessage"></p>
+      </section>
+      <main>
+        <div id="sz" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">SZ</p>
+        </div>
+        <div id="s" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">S</p>
+        </div>
+        <div id="si" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">SI</p>
+        </div>
+        <div id="i" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">I</p>
+        </div>
+        <div id="ji" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">JI</p>
+        </div>
+        <div id="j" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">J</p>
+        </div>
+        <div id="jz" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">JZ</p>
+        </div>
+        <div id="z" class="world-side dropzone-grid" data-attribute="dropzone">
+          <p class="dropzone-content grid-item-center invisible">Z</p>
+        </div>
+        <div id="img-content" class="world-side flex-center"></div>
+        <div class="arrow-content">
+          <h2>S</h2>
+          <img src="./img/arrow.png" alt="" />
+        </div>
+      </main>
+      <button id="newItem" class="btn btn_1 grid-item-center" disabled="true">
+        NOVI PREDMET
+      </button>
+      <button id="helpBtn" class="btn btn_1 grid-item-center">POMOĆ</button>
+    </div>
+  </body>
+</html>
